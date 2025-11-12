@@ -63,7 +63,7 @@ This will:
 - Summarize with OpenAI
 - Email the formatted newsletter
 
-### 4) No‑API demo (for class presentation)
+### 4) No‑API demo
 If you don’t have keys ready or the network is flaky, run:
 ```bash
 python run_demo.py
@@ -95,7 +95,7 @@ Run `crontab -e` and add (daily at 8:00 AM):
 
 ---
 
-## Troubleshooting (what to say if something breaks)
+## Troubleshooting
 
 - **API errors / 401**: Key missing or invalid → check `.env` variables are loaded.
 - **Network timeouts**: Show `run_demo.py` to prove your pipeline logic without internet.
@@ -104,12 +104,10 @@ Run `crontab -e` and add (daily at 8:00 AM):
 
 ---
 
-## Rubric Alignment Cheat Sheet (for your demo)
+## Rubric Alignment (for demo)
 
 1. **Fetching Data** → run `main.py` and show terminal logs printing headlines and URLs.
 2. **Summarizing** → point to `summarize.py` and show console summaries (we print the first ~200 chars).
 3. **Email** → Open inbox; show the received newsletter with clickable links and clean formatting.
 4. **Automation** → reference the “Scheduling” section above; optionally show your Task Scheduler/cron entry.
 5. **Understanding** → be ready to point to functions in each file and explain their role in the pipeline.
-
-Good luck!
